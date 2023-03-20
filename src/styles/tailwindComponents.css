@@ -1,0 +1,78 @@
+.chat-container {
+    @apply h-screen flex items-center justify-center bg-gray-200;
+}
+
+.chat-box {
+    @apply bg-white p-6 rounded-lg shadow-lg w-3/4 h-4/5 flex flex-col;
+}
+
+.message-list {
+    @apply overflow-y-auto h-full mb-4 max-h-[90%];
+}
+
+.message {
+    @apply mb-2;
+}
+
+.message .timestamp {
+    @apply text-gray-400 text-xs mr-2;
+}
+
+.message .text {
+    @apply text-gray-800;
+}
+
+.input-area {
+    @apply flex mt-auto;
+}
+
+.input-area input {
+    @apply flex-grow border border-gray-300 rounded-lg p-2 outline-none;
+}
+
+.input-area button {
+    @apply ml-2 bg-green-500 text-white font-bold rounded-lg px-4 py-2 shadow-md hover:bg-green-600;
+}
+.auth-container {
+    @apply h-screen flex items-center justify-center bg-gray-200;
+}
+
+.auth-box {
+    @apply bg-white p-6 rounded-lg shadow-lg w-96;
+}
+
+.auth-input {
+    @apply mb-4 w-full border border-gray-300 rounded-lg p-2 outline-none;
+}
+
+.auth-button {
+    @apply w-full bg-green-500 text-white font-bold rounded-lg px-4 py-2 shadow-md hover:bg-green-600 mb-4;
+}
+
+.message .username {
+    @apply font-bold text-blue-700;
+}
+
+.error-overlay {
+    @apply fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50;
+}
+
+.error-box {
+    @apply bg-white p-6 rounded-lg shadow-lg w-96;
+}
+
+.error-title {
+    @apply text-xl font-bold mb-4;
+}
+
+.error-close-button {
+    @apply w-full bg-red-500 text-white font-bold rounded-lg px-4 py-2 shadow-md hover:bg-red-600 mt-4;
+}
+
+.other-user {
+    @apply bg-blue-100 rounded-lg p-2 mb-2;
+}
+
+.current-user {
+    @apply bg-green-100 rounded-lg p-2 mb-2;
+}
